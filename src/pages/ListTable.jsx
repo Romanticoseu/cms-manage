@@ -93,8 +93,9 @@ export default function List() {
     ];
 
     //分页
-    const pageChange = (pagination) => {
-        console.log(pagination)
+    const pageChange = (arg) => {
+        console.log(arg)
+        getArticleList(arg.current, arg.pageSize);
     }
 
     return (
